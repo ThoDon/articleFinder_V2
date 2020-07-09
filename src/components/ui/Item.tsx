@@ -1,6 +1,7 @@
 import React from 'react';
+import { ItemProps } from '../types';
 
-const Item = ({ item, onRemoveItem }) => (
+const Item = ({ item, onRemoveItem }: ItemProps) => (
 	<div className='item'>
 		<span style={{ width: '40%' }}>
 			<a href={item.url}>{item.title}</a>
